@@ -10,13 +10,19 @@ import Foundation
 
 public class GetCardFromDeckInteractor {
     let deck: Deck
+    let manager: DeckOfCardsAPIManager
+
+    public convenience init(deck: Deck) {
+        self.init(deck: deck, manager: DeckOfCardsAPIManagerGCDImpl())
+    }
     
-    public init(deck: Deck) {
+    public init(deck: Deck, manager: DeckOfCardsAPIManager) {
         self.deck = deck
+        self.manager = manager
     }
     
     public func execute(completion: @escaping (Card) -> Void) {
-        DeckOfCardsAPIManager().downloadCard(deck: deck) { (card: Card) in
+        manager.downloadCard(deck: deck) { (card: Card) in
             assert(Thread.current == Thread.main)
             
             completion(card)

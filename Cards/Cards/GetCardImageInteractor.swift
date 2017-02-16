@@ -10,17 +10,22 @@ import UIKit
 
 public class GetCardImageInteractor {
     let card: Card
+    let manager: DeckOfCardsAPIManager
+
+    public convenience init(card: Card) {
+        self.init(card: card, manager: DeckOfCardsAPIManagerGCDImpl())
+    }
     
-    public init(card: Card) {
+    public init(card: Card, manager: DeckOfCardsAPIManager) {
         self.card = card
+        self.manager = manager
     }
     
     public func execute(completion: @escaping (UIImage) -> Void) {
-        DeckOfCardsAPIManager().downloadCardImage(card: self.card) { (image: UIImage) in
+        manager.downloadCardImage(card: self.card) { (image: UIImage) in
+            assert(Thread.current == Thread.main)
             
             completion(image)
         }
-    }
-    
-    
+    }   
 }
