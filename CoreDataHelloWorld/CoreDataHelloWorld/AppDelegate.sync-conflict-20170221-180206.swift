@@ -17,7 +17,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
         let masterNavigationController = splitViewController.viewControllers[0] as! UINavigationController
         let controller = masterNavigationController.topViewController as! MasterViewController
-        self.context = self.coreDataManager.persistentContainer(dbName: "CoreDataHelloWorld").viewContext
+        
+        
+        
+        // Persistent Container
+        let persistentContainer: NSPersistentContainer = self.coreDataManager.persistentContainer(dbName: "CoreDataHelloWorld")
+        
+        // Persistent Store: BBDD
+        
+        // Persistent Store Coordinator
+        let persistentStoreCoordinator: NSPersistentStoreCoordinator = persistentContainer.persistentStoreCoordinator
+        
+        // Context
+        self.context = persistentContainer.viewContext
+
+        // object model
+        persistentContainer.managedObjectModel
+        
         
         testZone()
         
@@ -53,9 +69,54 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
 
         
         let diego: Person = Person(context: self.context!)
+        diego.name = "Adiós"
+        diego.address = "This wednesday"
+        diego.married = true
+        diego.happy = true
         
+        let marujita = Person(context: self.context!, name: "Marujita Díaz")
+        
+        print("❤️  \(self.context!.insertedObjects.count)")
         
         self.coreDataManager.saveContext(context: self.context!)
+        
+        self.context!.delete(marujita) // marcamos marujita
+        print("*** --> 😇 \(marujita.isDeleted)")
+        self.coreDataManager.saveContext(context: self.context!)
+
+        diego.happy = false
+        diego.address = "Under a bridge"
+        
+        print(" 🍅  Changes  \(self.context!.hasChanges) ")
+        
+        // fetch: consultar objetos gestionados en un contexto
+        
+        let fetchRequest: NSFetchRequest<Person> = Person.fetchRequest()
+        _ = NSFetchRequest<Person>(entityName: "Person")
+        
+        fetchRequest.fetchBatchSize = 10
+        
+        let orderByName = NSSortDescriptor(key: "name", ascending: true)
+        let orderByAddress = NSSortDescriptor(key: "address", ascending: true)
+        
+        fetchRequest.sortDescriptors = [orderByName, orderByAddress]
+        
+        fetchRequest.sortDescriptors = [NSSortDescriptor(key: "name", ascending: true),
+                                        NSSortDescriptor(key: "address", ascending: true)]
+
+        do {
+            let result = try self.context!.fetch(fetchRequest)
+            print("Num records \(result.count)")
+            
+            for p in result {
+                print("Name \(p.name), address \(p.address)")
+            }
+            
+        } catch {
+            
+        }
+        
+        
         
     }
     

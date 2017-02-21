@@ -15,6 +15,7 @@
 		9943602F1E550AA500E5EE98 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9943602E1E550AA500E5EE98 /* Assets.xcassets */; };
 		994360321E550AA600E5EE98 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 994360301E550AA600E5EE98 /* LaunchScreen.storyboard */; };
 		9943603E1E5513A100E5EE98 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9943603D1E5513A100E5EE98 /* CoreDataManager.swift */; };
+		99536B2F1E5B883400F4808D /* Person+Inits.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99536B2E1E5B883400F4808D /* Person+Inits.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		994360311E550AA600E5EE98 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		994360331E550AA600E5EE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9943603D1E5513A100E5EE98 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		99536B2E1E5B883400F4808D /* Person+Inits.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Person+Inits.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				994360241E550AA500E5EE98 /* CoreDataHelloWorld.xcdatamodeld */,
+				99536B2E1E5B883400F4808D /* Person+Inits.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -179,6 +182,7 @@
 			files = (
 				994360261E550AA500E5EE98 /* CoreDataHelloWorld.xcdatamodeld in Sources */,
 				994360231E550AA500E5EE98 /* AppDelegate.swift in Sources */,
+				99536B2F1E5B883400F4808D /* Person+Inits.swift in Sources */,
 				994360281E550AA500E5EE98 /* MasterViewController.swift in Sources */,
 				9943603E1E5513A100E5EE98 /* CoreDataManager.swift in Sources */,
 				9943602A1E550AA500E5EE98 /* DetailViewController.swift in Sources */,
@@ -341,6 +345,7 @@
 				994360381E550AA600E5EE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
