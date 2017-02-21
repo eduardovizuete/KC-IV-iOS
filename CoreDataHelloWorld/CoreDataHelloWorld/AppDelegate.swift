@@ -51,9 +51,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, UISplitViewControllerDele
         let ev2 = Event(context: self.context!)
         ev2.timestamp = NSDate()
 
-        self.coreDataManager.saveContext(context: self.context!)
         
         let diego: Person = Person(context: self.context!)
+        
+        
+        self.coreDataManager.saveContext(context: self.context!)
         
     }
     
