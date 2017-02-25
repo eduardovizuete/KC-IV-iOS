@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		4BBD103DD8C792C482835562 /* Pods_Everpobre.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C9B8414B2DD252FAA8E1922B /* Pods_Everpobre.framework */; };
+		99030F181E5F717E002D32EB /* NotesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99030F171E5F717E002D32EB /* NotesController.swift */; };
 		9921A5681E5CDBF3003056BF /* AddEditNotebookController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9921A5671E5CDBF3003056BF /* AddEditNotebookController.swift */; };
 		9921A56A1E5CF125003056BF /* NotebooksController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9921A5691E5CF125003056BF /* NotebooksController+UICollectionView.swift */; };
 		9921A56C1E5CF54E003056BF /* NotebooksController+NSFetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9921A56B1E5CF54E003056BF /* NotebooksController+NSFetchResultController.swift */; };
@@ -21,10 +22,18 @@
 		99536B561E5BB2F000F4808D /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99536B551E5BB2F000F4808D /* CoreDataManager.swift */; };
 		99536B591E5BB34700F4808D /* Notebook+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99536B581E5BB34700F4808D /* Notebook+Utils.swift */; };
 		99536B5B1E5BB35F00F4808D /* Note+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99536B5A1E5BB35F00F4808D /* Note+Utils.swift */; };
+		99598DFD1E5F7AA1000D55B7 /* AddEditNoteController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598DFC1E5F7AA1000D55B7 /* AddEditNoteController.swift */; };
+		99598DFF1E5F7F10000D55B7 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598DFE1E5F7F10000D55B7 /* Utils.swift */; };
+		99598E011E5F7FDA000D55B7 /* UIViewController+Pop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598E001E5F7FDA000D55B7 /* UIViewController+Pop.swift */; };
+		99598E031E5F80AB000D55B7 /* Popable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598E021E5F80AB000D55B7 /* Popable.swift */; };
+		99598E051E5F83AA000D55B7 /* NotesController+NSFetchResultController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598E041E5F83AA000D55B7 /* NotesController+NSFetchResultController.swift */; };
+		99598E071E5F8490000D55B7 /* NotesController+UICollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598E061E5F8490000D55B7 /* NotesController+UICollectionView.swift */; };
+		99598E091E5F87A1000D55B7 /* NoteCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99598E081E5F87A1000D55B7 /* NoteCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		5B64A7AFFFF916C637E35C8B /* Pods-Everpobre.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Everpobre.release.xcconfig"; path = "Pods/Target Support Files/Pods-Everpobre/Pods-Everpobre.release.xcconfig"; sourceTree = "<group>"; };
+		99030F171E5F717E002D32EB /* NotesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesController.swift; path = NotesController/NotesController.swift; sourceTree = "<group>"; };
 		9921A5671E5CDBF3003056BF /* AddEditNotebookController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditNotebookController.swift; sourceTree = "<group>"; };
 		9921A5691E5CF125003056BF /* NotebooksController+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotebooksController+UICollectionView.swift"; sourceTree = "<group>"; };
 		9921A56B1E5CF54E003056BF /* NotebooksController+NSFetchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotebooksController+NSFetchResultController.swift"; sourceTree = "<group>"; };
@@ -40,6 +49,13 @@
 		99536B551E5BB2F000F4808D /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
 		99536B581E5BB34700F4808D /* Notebook+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notebook+Utils.swift"; sourceTree = "<group>"; };
 		99536B5A1E5BB35F00F4808D /* Note+Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+Utils.swift"; sourceTree = "<group>"; };
+		99598DFC1E5F7AA1000D55B7 /* AddEditNoteController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddEditNoteController.swift; sourceTree = "<group>"; };
+		99598DFE1E5F7F10000D55B7 /* Utils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		99598E001E5F7FDA000D55B7 /* UIViewController+Pop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Pop.swift"; sourceTree = "<group>"; };
+		99598E021E5F80AB000D55B7 /* Popable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Popable.swift; sourceTree = "<group>"; };
+		99598E041E5F83AA000D55B7 /* NotesController+NSFetchResultController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "NotesController+NSFetchResultController.swift"; path = "NotesController/NotesController+NSFetchResultController.swift"; sourceTree = "<group>"; };
+		99598E061E5F8490000D55B7 /* NotesController+UICollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NotesController+UICollectionView.swift"; sourceTree = "<group>"; };
+		99598E081E5F87A1000D55B7 /* NoteCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCell.swift; sourceTree = "<group>"; };
 		ACDB835F48427BA675E04C64 /* Pods-Everpobre.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Everpobre.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Everpobre/Pods-Everpobre.debug.xcconfig"; sourceTree = "<group>"; };
 		C9B8414B2DD252FAA8E1922B /* Pods_Everpobre.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Everpobre.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -73,14 +89,23 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		99030F161E5F7125002D32EB /* NotesController */ = {
+			isa = PBXGroup;
+			children = (
+				99030F171E5F717E002D32EB /* NotesController.swift */,
+				99598E041E5F83AA000D55B7 /* NotesController+NSFetchResultController.swift */,
+				99598E061E5F8490000D55B7 /* NotesController+UICollectionView.swift */,
+			);
+			name = NotesController;
+			sourceTree = "<group>";
+		};
 		9921A56F1E5CFF5D003056BF /* NotebooksController */ = {
 			isa = PBXGroup;
 			children = (
+				99536B3E1E5BA6AE00F4808D /* NotebooksController.swift */,
 				9921A56B1E5CF54E003056BF /* NotebooksController+NSFetchResultController.swift */,
 				9921A5691E5CF125003056BF /* NotebooksController+UICollectionView.swift */,
-				99536B3E1E5BA6AE00F4808D /* NotebooksController.swift */,
 			);
-			name = NotebooksController;
 			path = NotebooksController;
 			sourceTree = "<group>";
 		};
@@ -112,6 +137,7 @@
 				99536B531E5BAD4600F4808D /* View */,
 				99536B3C1E5BA6AE00F4808D /* AppDelegate.swift */,
 				99536B4B1E5BA6AE00F4808D /* Info.plist */,
+				99598DFE1E5F7F10000D55B7 /* Utils.swift */,
 			);
 			path = Everpobre;
 			sourceTree = "<group>";
@@ -123,17 +149,19 @@
 				99536B5A1E5BB35F00F4808D /* Note+Utils.swift */,
 				99536B581E5BB34700F4808D /* Notebook+Utils.swift */,
 			);
-			name = Model;
 			path = Model;
 			sourceTree = "<group>";
 		};
 		99536B521E5BAD4100F4808D /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				99030F161E5F7125002D32EB /* NotesController */,
 				9921A56F1E5CFF5D003056BF /* NotebooksController */,
 				9921A5671E5CDBF3003056BF /* AddEditNotebookController.swift */,
+				99598DFC1E5F7AA1000D55B7 /* AddEditNoteController.swift */,
+				99598E001E5F7FDA000D55B7 /* UIViewController+Pop.swift */,
+				99598E021E5F80AB000D55B7 /* Popable.swift */,
 			);
-			name = Controller;
 			path = Controller;
 			sourceTree = "<group>";
 		};
@@ -143,8 +171,8 @@
 				99536B481E5BA6AE00F4808D /* LaunchScreen.storyboard */,
 				99536B401E5BA6AE00F4808D /* Main.storyboard */,
 				9921A56D1E5CF97B003056BF /* NotebookCell.swift */,
+				99598E081E5F87A1000D55B7 /* NoteCell.swift */,
 			);
-			name = View;
 			path = View;
 			sourceTree = "<group>";
 		};
@@ -153,7 +181,6 @@
 			children = (
 				99536B461E5BA6AE00F4808D /* Assets.xcassets */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -162,7 +189,6 @@
 			children = (
 				99536B551E5BB2F000F4808D /* CoreDataManager.swift */,
 			);
-			name = Managers;
 			path = Managers;
 			sourceTree = "<group>";
 		};
@@ -290,15 +316,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				99536B3F1E5BA6AE00F4808D /* NotebooksController.swift in Sources */,
+				99598E031E5F80AB000D55B7 /* Popable.swift in Sources */,
 				9921A56C1E5CF54E003056BF /* NotebooksController+NSFetchResultController.swift in Sources */,
+				99598E071E5F8490000D55B7 /* NotesController+UICollectionView.swift in Sources */,
 				9921A56E1E5CF97B003056BF /* NotebookCell.swift in Sources */,
+				99030F181E5F717E002D32EB /* NotesController.swift in Sources */,
+				99598E011E5F7FDA000D55B7 /* UIViewController+Pop.swift in Sources */,
 				99536B3D1E5BA6AE00F4808D /* AppDelegate.swift in Sources */,
+				99598DFF1E5F7F10000D55B7 /* Utils.swift in Sources */,
 				99536B591E5BB34700F4808D /* Notebook+Utils.swift in Sources */,
 				99536B561E5BB2F000F4808D /* CoreDataManager.swift in Sources */,
 				99536B451E5BA6AE00F4808D /* Everpobre.xcdatamodeld in Sources */,
 				9921A56A1E5CF125003056BF /* NotebooksController+UICollectionView.swift in Sources */,
 				99536B5B1E5BB35F00F4808D /* Note+Utils.swift in Sources */,
 				9921A5681E5CDBF3003056BF /* AddEditNotebookController.swift in Sources */,
+				99598E091E5F87A1000D55B7 /* NoteCell.swift in Sources */,
+				99598E051E5F83AA000D55B7 /* NotesController+NSFetchResultController.swift in Sources */,
+				99598DFD1E5F7AA1000D55B7 /* AddEditNoteController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

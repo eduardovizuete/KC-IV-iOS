@@ -25,8 +25,8 @@ class NotebooksController: UIViewController {
             if identifier == "NotesSegue" {
                 let indexPath = collectionView.indexPathsForSelectedItems?.first
                 let notebook = fetchedResultsController.object(at: indexPath!)
-                let vc = segue.destination as! AddEditNotebookController
-                notebook.notes
+                let vc = segue.destination as! NotesController
+                vc.notebook = notebook
             }
         }
     }
