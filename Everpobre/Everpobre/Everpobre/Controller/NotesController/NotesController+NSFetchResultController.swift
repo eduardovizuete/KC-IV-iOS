@@ -6,7 +6,7 @@ extension NotesController: NSFetchedResultsControllerDelegate {
             return _fetchedResultsController!
         }
         
-        _fetchedResultsController = NSFetchedResultsController(fetchRequest: Note.notesFrom(notebook: self.notebook), managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: "Master")
+        _fetchedResultsController = NSFetchedResultsController(fetchRequest: Note.notesFrom(notebook: self.notebook), managedObjectContext: self.context!, sectionNameKeyPath: nil, cacheName: self.notebook.title)
         _fetchedResultsController?.delegate = self
         
         do {
